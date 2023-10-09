@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedNeuronal_UPTC</title>
+
+    <!--Preload-->
+
+    <link rel="preload" href="/css/normalize.css" as="styles">
+    <link rel="stylesheet" href="/css/normalize.css">
+
+    <link rel="stylesheet" href="/css/styles.css" as="styles">
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <img class="UPTC" src="/imagenes/Logo_uptc_oficial.png" alt="UPTC_imagen">
+            <img src="/imagenes/descarga-removebg-preview.png" alt="Escuela_IngenieriaElectronica">
+        </div>
+    </header>
+
+    <div class="contenedor_cuerpo">
+        <h1>Aplicación de una RNA</h1>
+        <h2>Detección de un número por medio de una imagen</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input class="Seleccionar boton" type="file" id="fileInput" accept=".bmp">
+            <div id="imagenContainer" style="display: none;">
+                <img id="imagenMostrada" src="" alt="Imagen BMP" style="width: 50rem;">
+            </div>
+            <input class="Analizar boton" type="submit" name="Analizar" value="Analizar">
+            <span id="resultado"></span>
+        </form>
+    </div>
+
+    <canvas id="miCanvas" width="28" height="28" style="display:none;"></canvas>
+
+    <footer>Realizado por: D. E. Gonzalez Becerra - F. L. Ortiz Cuevas</footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
